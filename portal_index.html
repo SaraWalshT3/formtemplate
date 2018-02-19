@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Compliance Data Collector</title>
+    <meta charset="utf-8">
+    <meta name="description" content="exapmle of using AJAX and JSON">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="scripts/test.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Compliance Data Collector</h1>
+    </header>
+
+    <main>
+      <!--in controls, give id="controlchoice"-->
+      <!--// give target box id="info"-->
+      <form name="controlinput"> <!-- need action="confirm.html" and method="get" ?-->
+      <div id="left">
+      <fieldset class="left">
+        <legend>Choose a Control</legend>
+        <p><select name="controls" size="27" width="200px">
+          <option value="3.1.1">3.1.1</option>
+          <option value="3.1.2">3.1.2</option>
+          <option value="3.1.3">3.1.3</option>
+        </select>
+      </fieldset>
+      <Br>
+      </div>
+      <div id="right">
+      <fieldset class="right">
+        <legend>Company info</legend>
+        <p>Company Name, Point of Contact</p>
+        <p>Control ID, Control Title</p>
+      </fieldset>
+
+      <fieldset class="right">
+        <legend>Fill this in</legend>
+        <p><label for="respparty">Responsible Party: </label>
+        <select name="respparty" id="getdata">
+          <option disabled selected value></option>
+          <option value="csp">CSP</option>
+          <option value="vendor">Vendor</option>
+          <option value="shared">Shared</option>
+        </select>
+        <label for="status">Status: </label>
+        <select name="status">
+          <option disabled selected value></option>
+          <option value="c">Compliant</option>
+          <option value="nc">Non-Compliant</option>
+          <option value="na">Not Applicable</option>
+        </select>
+      </p>
+      <p>
+        <label for="compdate">Completion Date: </label>
+        <input type="date"></input>
+      </p>
+      <p>
+        <label for="strategy">Completion Strategy: </label>
+      </p>
+      <p>
+        <textarea name="strategy"></textarea>
+      </fieldset>
+    </p>
+
+      <fieldset class="right">
+        <legend>Control info</legend>
+        <p><textarea name="controldesc" disabled>This will be a description of the selected control.</textarea></p>
+      </fieldset>
+      <button class="btn" name="submit">Submit</button>
+      <button class="btn" name="clear">Clear</button>
+    </div>
+    </form>
+
+
+    </main>
+
+  </body>
+</html>
