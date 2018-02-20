@@ -1,5 +1,4 @@
- {
-  "items": [
+[
   {
     "id": "3.1.1",
     "cat": "Maintenance",
@@ -17,4 +16,4 @@ are permitted to execute."
     "cat": "Maintenance",
     "desc" : "Control the flow of CUI in accordance with approved authorizations."
   } ]
-}
+
